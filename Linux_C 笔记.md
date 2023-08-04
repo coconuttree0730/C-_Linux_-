@@ -210,3 +210,11 @@ printf("hello linux-c\n");
 - 旧时期，考虑硬件问题，所以会采用char（占用空间小，故使用unsigend char 取代int）
 - bool（布尔）类型：真and假：
 - ![image.png](https://cdn.nlark.com/yuque/0/2023/png/35877764/1691135192565-45b9cc95-4ff9-4c42-ad7f-03c5b1dff6c3.png#averageHue=%23292b37&clientId=uc5c1a63d-6b6d-4&from=paste&height=426&id=ua507a8a6&originHeight=639&originWidth=678&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=79184&status=done&style=none&taskId=u24b12477-32c0-4e52-bfc4-317671eea12&title=&width=452)
+
+- 浮点型数据 与 整型的比较（不能直接比较 零（0）这个数！！！）
+> 需要借助工具fabs（）函数；
+> ![image.png](https://cdn.nlark.com/yuque/0/2023/png/35877764/1691136135561-119630f0-f63a-49c2-b50e-3f92210e8a62.png#averageHue=%239ec9fb&clientId=uc5c1a63d-6b6d-4&from=paste&height=325&id=u0597cfbf&originHeight=488&originWidth=1033&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=332678&status=done&style=none&taskId=uf1c53dfb-5db3-41d0-850d-bc1fef2e180&title=&width=688.6666666666666)
+> ![image.png](https://cdn.nlark.com/yuque/0/2023/png/35877764/1691137117204-89c41c90-2f56-4f54-ae61-4f178dabd397.png#averageHue=%23282b37&clientId=uc5c1a63d-6b6d-4&from=paste&height=703&id=u1c8a0074&originHeight=1054&originWidth=609&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=106885&status=done&style=none&taskId=u30828b40-6bf2-4f86-88e9-99bfbed6bac&title=&width=406)
+
+> **由最后的输出结果发现，直接使用 整型和浮点型进行比较是会出现逻辑错误的**
+
